@@ -1,2 +1,4 @@
 # Question-Answering with RAG
-in progress
+Implementation of question answering on PDF files using Retrieval Augmented Generation.
+
+
