@@ -1,3 +1,4 @@
 .idea/
 src/chroma
 __pycache__
+tests/chroma
