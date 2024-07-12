@@ -18,6 +18,7 @@ As usual, run the following command to install Python dependencies:
 pip install -r requirements.txt
 ```
 
+## Running the app
 Until I can find the time to build a frontend, the app should be ran from the terminal.
 1. Add PDF files to the `data` folder
 2. Change the directory: `cd ./src`
@@ -26,5 +27,5 @@ Until I can find the time to build a frontend, the app should be ran from the te
 python query_data.py "<Question about PDF content here>"
 ```
 
-### Embeddings
+## Embeddings
 The quality of the answers depends a lot on the embedding model you use. You can use embedding models from Ollama, or through the `langchain-huggingface` library. Based on experience, models like `all-MiniLM-L6-v2` prevent Mistral from answering any questions, whereas models like `nomic-embed-text` show noticeable improvements. If you have access to APIs from OpenAPI or Amazon, they might work even better than the local ones.
