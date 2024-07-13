@@ -16,7 +16,7 @@ jobs:
         python-version: '3.12'
 
     - name: Give execute permissions setup.sh
-      run: chmod +x scripts/setup_and_test.sh
+      run: chmod +x setup.sh
 
     - name: Set up the scripts
       run: ./setup.sh
