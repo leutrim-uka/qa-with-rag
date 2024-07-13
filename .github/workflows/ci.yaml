@@ -21,7 +21,7 @@ jobs:
     - name: Install Ollama models
       run: |
         ollama run mistral
-        ollama run nomic-embed-text
+        ollama pull nomic-embed-text
 
     - name: Install dependencies
       run: pip install -r requirements.txt
