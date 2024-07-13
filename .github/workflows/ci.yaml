@@ -15,14 +15,11 @@ jobs:
       with:
         python-version: '3.12'
 
-    - name: Install Ollama
-      run: curl -fsSL https://ollama.com/install.sh | sh
+    - name: Give execute permissions setup.sh
+      run: chmod +x scripts/setup_and_test.sh
 
-    - name: Install Ollama model
-      run: ollama run mistral
+    - name: Set up the scripts
+      run: ./setup.sh
 
-    - name: Install dependencies
-      run: pip install -r requirements.txt
-
-    - name: Run tests with pytest
+    - name: Run tests
       run: pytest
